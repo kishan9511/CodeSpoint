@@ -6,4 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\AdminTemplate\assets\images\**" />
+    <Content Remove="wwwroot\AdminTemplate\assets\images\**" />
+    <EmbeddedResource Remove="wwwroot\AdminTemplate\assets\images\**" />
+    <None Remove="wwwroot\AdminTemplate\assets\images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\AdminTemplate\assets\libs\jquery.easing\bower_components\jquery\MIT-LICENSE.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\AdminTemplate\assets\libs\jquery.easing\bower_components\jquery-easing-original\jquery.easing.compatibility.js" />
+    <None Include="wwwroot\AdminTemplate\assets\libs\jquery.easing\bower_components\jquery-easing-original\jquery.easing.min.js" />
+    <None Include="wwwroot\AdminTemplate\assets\libs\jquery.easing\bower_components\jquery\jquery.min.js" />
+  </ItemGroup>
+
 </Project>
