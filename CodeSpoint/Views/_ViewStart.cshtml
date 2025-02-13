@@ -1,3 +1,38 @@
-﻿@{
-    Layout = "_Layout";
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    var Path = $"{Context.Request.Path}/";
+    bool IsHTMLSection = Path.Contains("/HTMLSection/");
+
+
+    // bool IsEmployees = Path.Contains("/Employees/");
+    // bool IsClient = Path.Contains("/Client");
+    // bool IsCampaignManager = Path.Contains("/CampaignManager");
+
+    if (IsHTMLSection)
+    {
+        Layout = "_HTMLSectionLayout";
+    }
+
+    // if (IsEmployees)
+    // {
+    //     Layout = "_EmployeesLayout";
+    // }
+
+    // if (IsClient)
+
+    // {
+    //     Layout = "_ClientLayout";
+    // }
+
+    // if (IsCampaignManager)
+
+    // {
+    //     Layout = "_CampaignManagerLayout";
+    // }
+
+    else
+    {
+        Layout = "_Layout";
+    }
 }

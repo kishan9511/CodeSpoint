@@ -1,0 +1,50 @@
+﻿/*for sideNavMenu*/
+body[data-sidebar=dark] .vertical-menu {
+    
+    background: #EEF7F0;
+}
+
+
+/*for navheder*/
+body[data-sidebar=dark] .navbar-brand-box {
+    background: #FFFFFF;
+}
+.navbar-header {
+    background: #FFFFFF;
+}
+.navbar-header .dropdown .show.header-item {
+        background: #FFFFFF;
+ }
+
+
+
+
+/* Make all text and icons black */
+#sidebar-menu ul li a {
+    color: black !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between icon and text */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+    /* Style icons */
+    #sidebar-menu ul li a i {
+        color: black !important;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover effect - change background, text, and icon color */
+    #sidebar-menu ul li a:hover {
+        background-color: #f0f0f0; /* Light gray background */
+        color: #007bff !important; /* Blue text */
+        border-radius: 5px;
+    }
+
+        /* Change icon color on hover */
+        #sidebar-menu ul li a:hover i {
+            color: #007bff !important; /* Blue icons */
+        }

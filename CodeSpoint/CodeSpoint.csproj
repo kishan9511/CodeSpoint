@@ -23,4 +23,18 @@
     <None Include="wwwroot\AdminTemplate\assets\libs\jquery.easing\bower_components\jquery\jquery.min.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\HTMLSection\_ViewStart.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="VirtualModel\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    var Path = $"{Context.Request.Path}/";
+    bool IsHTMLSection = Path.Contains("/HTMLSection/");
+
+    if (IsHTMLSection)
+    {
+        Layout = "_HTMLSectionLayout";
+    }
+
+    else
+    {
+        Layout = "_HTMLSectionLayout";
+    }
+}

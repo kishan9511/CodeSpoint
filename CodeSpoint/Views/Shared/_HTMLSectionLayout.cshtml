@@ -2,12 +2,134 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="~/AdminTemplate/assets/images/favicon.ico">
+
+	<!-- Bootstrap Css -->
+	<link href="~/AdminTemplate/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<!-- Icons Css -->
+	<link href="~/AdminTemplate/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<!-- App Css-->
+	<link href="~/AdminTemplate/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+	<!--custom Css-->
+	<link href="~/css/customstyle.css" rel="stylesheet" />
+
+
 </head>
-<body>
-    <div>
-        @RenderBody()
-    </div>
+
+
+
+<body data-sidebar="dark" data-layout-mode="light">
+	 
+	<!-- Begin page -->
+	<div id="layout-wrapper">
+
+
+		<header id="page-topbar">
+			<div class="navbar-header">
+				<div class="d-flex">
+					<!-- LOGO -->
+					<div class="navbar-brand-box">
+						<a asp-controller="" asp-action="" class="logo logo-dark">
+							<span class="logo-sm">
+								<img src="#" alt="" style="height:50px">
+							</span>
+							<span class="logo-lg">
+								<img src="#" alt="" style="height:65px">
+								 
+							</span>
+						</a>
+
+						<a asp-controller="" asp-action="" class="logo logo-light">
+							<span class="logo-sm">
+								<img src="#" alt="" style="height:50px">
+							</span>
+							<span class="logo-lg">
+								<img src="#" alt="" style="height:65px">
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="vertical-menu">
+
+			<div data-simplebar class="h-100">
+
+				<!--- Sidemenu -->
+				<div id="sidebar-menu">
+					<!-- Left Menu Start -->
+					<ul class="metismenu list-unstyled" id="side-menu">
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect">
+								<i class="bx bxl-html5"></i>
+								<span key="t-forms">HTML</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								<li><a asp-controller="HTMLSection" asp-action="HTMLIntroduction" key="t-default">Introduction</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect">
+								<i class="bx bxl-css3"></i>
+								<span key="t-forms">CSS</span>
+							</a>
+							<ul class="sub-menu" aria-expanded="false">
+								 
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- Sidebar -->
+			</div>
+		</div>
+
+
+
+	</div>
+	<!-- END layout-wrapper -->
+	<!-- Right bar overlay-->
+	<div class="rightbar-overlay"></div>
+
+
+
+
+
+
+	@RenderBody()
+
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy;  <script>document.write(new Date().getFullYear())</script> - CodeSpoint - <a asp-area="" asp-controller="" asp-action="">Privacy</a>
+		</div>
+	</footer>
+
+
+
+	<!-- JAVASCRIPT -->
+	<script src="~/AdminTemplate/assets/libs/jquery/jquery.min.js"></script>
+	<script src="~/AdminTemplate/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="~/AdminTemplate/assets/libs/metismenu/metisMenu.min.js"></script>
+	<script src="~/AdminTemplate/assets/libs/simplebar/simplebar.min.js"></script>
+	<script src="~/AdminTemplate/assets/libs/node-waves/waves.min.js"></script>
+
+	<!-- apexcharts -->
+	<script src="~/AdminTemplate/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+	<!-- file-manager js -->
+	<script src="~/AdminTemplate/assets/js/pages/file-manager.init.js"></script>
+
+	<script src="~/AdminTemplate/assets/js/app.js"></script>
+
+
+
 </body>
 </html>
