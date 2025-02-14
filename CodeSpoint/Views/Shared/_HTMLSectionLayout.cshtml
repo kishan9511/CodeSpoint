@@ -95,22 +95,29 @@
 
 	</div>
 	<!-- END layout-wrapper -->
-	<!-- Right bar overlay-->
-	<div class="rightbar-overlay"></div>
+	<!-- main content-->
+	<div class="main-content">
 
-
-
-
-
-
-	@RenderBody()
-
-
-	<footer class="border-top footer text-muted">
-		<div class="container">
-			&copy;  <script>document.write(new Date().getFullYear())</script> - CodeSpoint - <a asp-area="" asp-controller="" asp-action="">Privacy</a>
+		<div class="page-content">
+			<div class="container-fluid">
+				@RenderBody()
+			</div> <!-- container-fluid -->
 		</div>
-	</footer>
+		<!-- End Page-content -->
+
+
+
+		<footer class="border-top footer text-muted">
+			<div class="container">
+				&copy;  <script>document.write(new Date().getFullYear())</script> - CodeSpoint - <a asp-area="" asp-controller="" asp-action="">Privacy</a>
+			</div>
+		</footer>
+
+	</div>
+	<!-- end main content-->
+
+
+	
 
 
 
