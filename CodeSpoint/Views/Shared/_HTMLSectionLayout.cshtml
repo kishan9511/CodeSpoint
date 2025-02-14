@@ -17,7 +17,16 @@
 
 	<!--custom Css-->
 	<link href="~/css/customstyle.css" rel="stylesheet" />
-
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		pre {
+			background-color: #f8f9fa;
+			padding: 10px;
+			border-radius: 5px;
+			overflow-x: auto;
+		}
+	</style>
 
 </head>
 
@@ -28,23 +37,22 @@
 	<!-- Begin page -->
 	<div id="layout-wrapper">
 
-
 		<header id="page-topbar">
 			<div class="navbar-header">
-				<div class="d-flex">
+				<div class="d-flex align-items-center">
+
 					<!-- LOGO -->
 					<div class="navbar-brand-box">
-						<a asp-controller="" asp-action="" class="logo logo-dark">
+						@* <a asp-controller="Home" asp-action="Index" class="logo logo-dark">
 							<span class="logo-sm">
-								<img src="#" alt="" style="height:50px">
+								<img src="#" alt="Logo" style="height:50px">
 							</span>
 							<span class="logo-lg">
-								<img src="#" alt="" style="height:65px">
-								 
+								<img src="#" alt="Logo" style="height:65px">
 							</span>
-						</a>
+						</a> *@
 
-						<a asp-controller="" asp-action="" class="logo logo-light">
+						<a asp-controller="Home" asp-action="Index" class="logo logo-light">
 							<span class="logo-sm">
 								<img src="#" alt="" style="height:50px">
 							</span>
@@ -53,10 +61,37 @@
 							</span>
 						</a>
 					</div>
+
+					<!-- Toggle Menu Button -->
+					<button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+						<i class="fa fa-fw fa-bars"></i>
+					</button>
 				</div>
+
+				@* <div class="d-flex align-items-center">
+					<!-- Search Icon (Mobile) -->
+					<div class="dropdown d-inline-block d-lg-none ms-2">
+						<button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="mdi mdi-magnify"></i>
+						</button>
+						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+							 aria-labelledby="page-header-search-dropdown">
+							<form class="p-3">
+								<div class="form-group m-0">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search ..." aria-label="Search">
+										<button class="btn btn-primary" type="submit">
+											<i class="mdi mdi-magnify"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div> *@
 			</div>
 		</header>
-
 
 		<div class="vertical-menu">
 
@@ -73,6 +108,7 @@
 							</a>
 							<ul class="sub-menu" aria-expanded="false">
 								<li><a asp-controller="HTMLSection" asp-action="HTMLIntroduction" key="t-default">Introduction</a></li>
+								<li><a asp-controller="HTMLSection" asp-action="HTMLBasic" key="t-default">HTML Basic</a></li>
 							</ul>
 						</li>
 
@@ -135,6 +171,8 @@
 	<script src="~/AdminTemplate/assets/js/pages/file-manager.init.js"></script>
 
 	<script src="~/AdminTemplate/assets/js/app.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 

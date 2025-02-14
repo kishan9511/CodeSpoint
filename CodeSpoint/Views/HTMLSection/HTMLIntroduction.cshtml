@@ -1,4 +1,78 @@
-﻿
+﻿ <!-- Next Button at Top Right -->
+<div class="d-flex justify-content-end">
+    <a asp-controller="HTMLSection" asp-action="HTMLBasic" class="btn btn-primary">Next &raquo;</a>
+</div>
+
+ 
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <!-- HTML Introduction -->
+                <div class="card shadow rounded">
+                    <div class="card-body">
+                        <h2 class="text-primary">HTML Introduction</h2>
+                        <p class="lead">HTML is the standard markup language for creating Web pages.</p>
+                        <ul class="list-unstyled">
+                            <li><b>HTML</b> stands for <b>Hyper Text Markup Language</b>.</li>
+                            <li>It provides the structure of a Web page.</li>
+                            <li>HTML elements are the building blocks of web pages.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Basic HTML Structure -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                    <h2 class="text-secondary">HTML Example</h2>
+                        <p class="lead">HTML is the standard markup language for creating web pages.</p>
+                        <h5 class="mt-3">Basic HTML Structure:</h5>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Web page title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Write Your First Heading&lt;/h1&gt;
+        &lt;p&gt;Write Your First Paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                    </div>
+                </div>
+
+                <!-- Example Explanation -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                    <h2 class="text-secondary">Example Explanation</h2>
+                        <p class="lead">HTML is used to create web pages.</p>
+                        <ul class="list-unstyled">
+                            <li>The <code>&lt;!DOCTYPE html&gt;</code> tells the browser that this is an <strong>HTML5 document</strong>.</li>
+                            <li>The <code>&lt;html&gt;</code> tag is the <strong>main container</strong> for the webpage.</li>
+                            <li>The <code>&lt;head&gt;</code> tag holds <strong>important information</strong> like the page title and styles.</li>
+                            <li>The <code>&lt;title&gt;</code> tag sets the <strong>page title</strong>, shown in the browser tab.</li>
+                            <li>The <code>&lt;body&gt;</code> tag contains <strong>everything you see</strong> on the page, like text, images, and links.</li>
+                            <li>The <code>&lt;h1&gt;</code> tag creates a <strong>big heading</strong>.</li>
+                            <li>The <code>&lt;p&gt;</code> tag creates a <strong>paragraph</strong>.</li>
+                        </ul>
+                        <h5 class="mt-4">What is an HTML Element?</h5>
+                        <p>An HTML element has an opening tag, some content, and a closing tag:</p>
+                        <pre><code>&lt;tagname&gt; Content here... &lt;/tagname&gt;</code></pre>
+                        <p>An element includes everything from the opening tag to the closing tag. Here’s an example:</p>
+                        <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+@* 
 
 <link href="~/css/html_intro.css" rel="stylesheet" />
 
@@ -28,3 +102,4 @@
 </div>
 
 
+ *@

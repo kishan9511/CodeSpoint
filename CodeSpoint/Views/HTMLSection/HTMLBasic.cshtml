@@ -1,0 +1,104 @@
+﻿ <!-- Next Button at Top Right -->
+<div class="d-flex justify-content-between">
+    <a asp-controller="HTMLSection" asp-action="HTMLIntroduction" class="btn btn-primary">&laquo; Previous</a>
+    <a asp-controller="HTMLSection" asp-action="HTMLBasic" class="btn btn-primary">Next &raquo;</a>
+</div>
+
+
+
+
+ 
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="card shadow rounded">
+                    <div class="card-body">
+                        <h2 class="text-primary">HTML Basics</h2>
+                        <p class="lead">HTML is the standard markup language for creating web pages.</p>
+                    </div>
+                </div>
+
+                <!-- HTML Documents -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                        <h4 class="text-secondary">HTML Documents</h4>
+                        <p>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+                        <p>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</p>
+                        <p>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.</p>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                    </div>
+                </div>
+
+                <!-- DOCTYPE Declaration -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                        <h4 class="text-secondary">The &lt;!DOCTYPE&gt; Declaration</h4>
+                        <p>The <code>&lt;!DOCTYPE&gt;</code> declaration represents the document type and helps browsers display web pages correctly.</p>
+                        <ul>
+                            <li>It must only appear once, at the top of the page.</li>
+                            <li>It is not case-sensitive.</li>
+                            <li>The HTML5 <code>&lt;!DOCTYPE&gt;</code> declaration is:</li>
+                        </ul>
+                        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- HTML Headings -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                        <h4 class="text-secondary">HTML Headings</h4>
+                        <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>
+                        <pre><code>&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+                    </code></pre>
+                    </div>
+                </div>
+
+                <!-- HTML Paragraphs -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                        <h4 class="text-secondary">HTML Paragraphs</h4>
+                        <p>HTML paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
+                        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+                    </code></pre>
+                    </div>
+                </div>
+
+                <!-- HTML Links -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                        <h4 class="text-secondary">HTML Links</h4>
+                        <p>HTML links are defined with the <code>&lt;a&gt;</code> tag. The link's destination is specified in the <code>href</code> attribute.</p>
+                        <pre><code>&lt;a href="https://www.youtube.com"&gt;This is a link&lt;/a&gt;
+                    </code></pre>
+                    </div>
+                </div>
+
+                <!-- HTML Images -->
+                <div class="card mt-3 shadow rounded">
+                    <div class="card-body">
+                        <h4 class="text-secondary">HTML Images</h4>
+                        <p>HTML images are defined with the <code>&lt;img&gt;</code> tag. The <code>src</code> (source file), <code>alt</code> (alternative text), <code>width</code>, and <code>height</code> attributes define the image properties.</p>
+                        <pre><code>&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
+                    </code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+
