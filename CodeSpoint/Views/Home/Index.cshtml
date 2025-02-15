@@ -1,8 +1,157 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Code-S-Point";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-S-Point - Learn to Code</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #FFFFFF;
+        }
+        .side-menu {
+            background-color: #EEF7F0;
+            padding: 20px;
+            height: 100vh;
+        }
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature-box i {
+            font-size: 40px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" asp-action="Index" asp-controller="HTMLSection">Code-S-Point</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" asp-action="HTMLIntroduction" asp-controller="HTMLSection">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#js">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#csharp">C#</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sql">SQL</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Side Menu -->
+            <div class="col-md-2 side-menu d-none d-md-block">
+                <h5>Topics</h5>
+                <ul class="list-unstyled">
+                    <li><a asp-action="HTMLIntroduction" asp-controller="HTMLSection" class="text-dark">HTML</a></li>
+                    <li><a href="#css" class="text-dark">CSS</a></li>
+                    <li><a href="#js" class="text-dark">JavaScript</a></li>
+                    <li><a href="#csharp" class="text-dark">C#</a></li>
+                    <li><a href="#sql" class="text-dark">SQL</a></li>
+                    <li><a href="#more" class="text-dark">More...</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 p-5">
+                <!-- Hero Section -->
+                <div class="text-center mb-5">
+                    <h1 class="display-3 fw-bold">Welcome to Code-S-Point</h1>
+                    <p class="lead">
+                        Learn, practice, and master web development and programming with interactive tutorials.
+                    </p>
+                    <a href="#html" class="btn btn-primary btn-lg">Start Learning</a>
+                </div>
+
+                <!-- Features -->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="bi bi-filetype-html"></i>
+                            <h3>HTML</h3>
+                            <p>Learn the basics of HTML and how to structure web pages.</p>
+                            <a asp-action="HTMLIntroduction" asp-controller="HTMLSection" class="btn btn-outline-primary btn-sm">Learn HTML</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="bi bi-filetype-css"></i>
+                            <h3>CSS</h3>
+                            <p>Style your web pages using CSS and make them look great.</p>
+                            <a href="#css" class="btn btn-outline-primary btn-sm">Learn CSS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="bi bi-filetype-js"></i>
+                            <h3>JavaScript</h3>
+                            <p>Add interactivity to your websites with JavaScript.</p>
+                            <a href="#js" class="btn btn-outline-primary btn-sm">Learn JavaScript</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center mt-4">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="bi bi-filetype-cs"></i>
+                            <h3>C#</h3>
+                            <p>Master C# and build powerful applications.</p>
+                            <a href="#csharp" class="btn btn-outline-primary btn-sm">Learn C#</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="bi bi-database"></i>
+                            <h3>SQL</h3>
+                            <p>Work with databases using SQL queries.</p>
+                            <a href="#sql" class="btn btn-outline-primary btn-sm">Learn SQL</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <i class="bi bi-code"></i>
+                            <h3>More Topics</h3>
+                            <p>Explore advanced programming and web development topics.</p>
+                            <a href="#more" class="btn btn-outline-primary btn-sm">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-5">
+                    <h2 class="fw-bold">Start Your Coding Journey Today!</h2>
+                    <p>Join thousands of learners and level up your coding skills.</p>
+                    <a href="#courses" class="btn btn-success btn-lg">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

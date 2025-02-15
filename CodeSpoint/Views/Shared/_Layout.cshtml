@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CodeSpoint</a>
+                <a class="navbar-brand" asp-action="Index" asp-controller="HTMLSection">CodeSpoint</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-action="Index" asp-controller="HTMLSection">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -45,12 +45,83 @@
         </main>
     </div>
 
-
-    <footer class="border-top footer text-muted">
+    <footer class="mt-5 bg-light text-dark pt-4">
         <div class="container">
-            &copy; 2025 - CodeSpoint - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <!-- Brand / Company Info -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Code-S-point</h5>
+                    <p class="mb-1">
+                        Find interactive tutorials on all technology, and interview questions from top companies.
+                    </p>
+                    <p>
+                        <strong>Contact Info</strong><br>
+                       #################
+                    </p>
+                    <!-- Social Icons -->
+                    <div>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tutorials -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Tutorials</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Data Structures</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">C Programming</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">C++ Tutorial</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Java Tutorial</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">HTML Tutorial</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Spring Tutorial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Interview Questions -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Interview Questions</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Microsoft</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Amazon</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Adobe</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Capgemini</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Cognizant</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Infosys</a></li>
+                    </ul>
+                </div>
+
+                <!-- Online Compiler -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Online Compiler</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">C</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">C++</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Java</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Python</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">JavaScript</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">TypeScript</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025  Code-S-point. All Rights Reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap CSS & Icons (Put these in your <head> or appropriate place) -->
+    <!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    -->
+
 
 
 

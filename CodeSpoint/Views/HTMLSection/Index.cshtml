@@ -1,5 +1,102 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Code-S-Point";
 }
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Code-S-Point</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .widget-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .widget-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .widget-icon {
+            font-size: 40px;
+            color: #007bff;
+        }
+
+        .dashboard-container {
+            background: #EEF7F0;
+            padding: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dashboard Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Code-S-Point Overview</h2>
+        <div class="dashboard-container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="widget-card">
+                        <i class="bi bi-filetype-html widget-icon"></i>
+                        <h4>HTML</h4>
+                        <p>Total Topics: <strong>2</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="widget-card">
+                        <i class="bi bi-filetype-css widget-icon"></i>
+                        <h4>CSS</h4>
+                        <p>Total Topics: <strong>Coming Soon</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="widget-card">
+                        <i class="bi bi-filetype-js widget-icon"></i>
+                        <h4>JavaScript</h4>
+                        <p>Total Topics: <strong>Coming Soon</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <div class="widget-card">
+                        <i class="bi bi-filetype-cs widget-icon"></i>
+                        <h4>C#</h4>
+                        <p>Total Topics: <strong>Coming Soon</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="widget-card">
+                        <i class="bi bi-database widget-icon"></i>
+                        <h4>SQL</h4>
+                        <p>Total Topics: <strong>Coming Soon</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="widget-card">
+                        <i class="bi bi-layers widget-icon"></i>
+                        <h4>More</h4>
+                        <p>Total Topics: <strong>Expanding...</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
