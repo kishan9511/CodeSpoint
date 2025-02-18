@@ -34,5 +34,14 @@ public class HTMLSectionController : Controller
     #endregion
 
 
+    #region--HTML element--
+
+    public IActionResult HTMLElement()
+    {
+        return View();
+    }
+
+    #endregion
+
 
 }
